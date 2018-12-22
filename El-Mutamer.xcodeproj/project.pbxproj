@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8144F8421CD5A130004F986 /* TrendsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144F8321CD5A120004F986 /* TrendsCollectionViewCell.swift */; };
+		E8144F8921CD607F0004F986 /* MoatamratViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144F8821CD607F0004F986 /* MoatamratViewController.swift */; };
+		E8144F8B21CE42590004F986 /* MaaredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144F8A21CE42590004F986 /* MaaredViewController.swift */; };
+		E8144F9321CE54270004F986 /* MoatamratSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144F9221CE54270004F986 /* MoatamratSubViewController.swift */; };
+		E8144F9A21CE5A270004F986 /* MaaredSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144F9921CE5A270004F986 /* MaaredSelectViewController.swift */; };
+		E8144F9C21CE5AAD0004F986 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144F9B21CE5AAD0004F986 /* profileViewController.swift */; };
+		E853750421C5B1A2001EE570 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853750321C5B1A2001EE570 /* AppDelegate.swift */; };
+		E853750621C5B1A2001EE570 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853750521C5B1A2001EE570 /* LoginViewController.swift */; };
+		E853750B21C5B1A4001EE570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E853750A21C5B1A4001EE570 /* Assets.xcassets */; };
+		E853750E21C5B1A4001EE570 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E853750C21C5B1A4001EE570 /* LaunchScreen.storyboard */; };
+		E853752121C5B35D001EE570 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853751921C5B355001EE570 /* CustomCell.swift */; };
+		E853752221C5B35D001EE570 /* extension+CALayer+ApplyShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853751A21C5B355001EE570 /* extension+CALayer+ApplyShadow.swift */; };
+		E853752321C5B35D001EE570 /* extension+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853751B21C5B355001EE570 /* extension+Gradient.swift */; };
+		E853752421C5B35D001EE570 /* extension+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853751C21C5B355001EE570 /* extension+NSLayoutConstraint.swift */; };
+		E853752521C5B35D001EE570 /* extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853751D21C5B355001EE570 /* extension+String.swift */; };
+		E853752621C5B35D001EE570 /* extension+UIColor+UIFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853751E21C5B355001EE570 /* extension+UIColor+UIFonts.swift */; };
+		E853752721C5B35D001EE570 /* extension+UITextField+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853751F21C5B355001EE570 /* extension+UITextField+UILabel.swift */; };
+		E853752821C5B35D001EE570 /* extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853752021C5B355001EE570 /* extension+UIViewController.swift */; };
+		E853752D21C5B39F001EE570 /* GESSTwoBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E853752A21C5B39F001EE570 /* GESSTwoBold.otf */; };
+		E853752E21C5B39F001EE570 /* GESSTwoLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = E853752B21C5B39F001EE570 /* GESSTwoLight.otf */; };
+		E853752F21C5B39F001EE570 /* GESSTwoMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E853752C21C5B39F001EE570 /* GESSTwoMedium.otf */; };
+		E853753821C5B8E4001EE570 /* Cairo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E853753221C5B8E4001EE570 /* Cairo-Black.ttf */; };
+		E853753921C5B8E4001EE570 /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E853753321C5B8E4001EE570 /* Cairo-Bold.ttf */; };
+		E853753A21C5B8E4001EE570 /* Cairo-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E853753421C5B8E4001EE570 /* Cairo-ExtraLight.ttf */; };
+		E853753B21C5B8E4001EE570 /* Cairo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E853753521C5B8E4001EE570 /* Cairo-Light.ttf */; };
+		E853753C21C5B8E4001EE570 /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E853753621C5B8E4001EE570 /* Cairo-Regular.ttf */; };
+		E853753D21C5B8E4001EE570 /* Cairo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E853753721C5B8E4001EE570 /* Cairo-SemiBold.ttf */; };
+		E853753F21C5BE67001EE570 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853753E21C5BE67001EE570 /* RegisterViewController.swift */; };
+		E853754421C5C335001EE570 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853754121C5C334001EE570 /* TabBarController.swift */; };
+		E853754521C5C335001EE570 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853754221C5C335001EE570 /* HomeViewController.swift */; };
+		E853755121C5C9DD001EE570 /* latesNewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853754E21C5C9D7001EE570 /* latesNewsCollectionViewCell.swift */; };
+		E853755321C5C9DD001EE570 /* SliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853755021C5C9D7001EE570 /* SliderCell.swift */; };
+		E8DA6ABB21C89E1D009B9EC9 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA6ABA21C89E1C009B9EC9 /* SideMenuTableViewController.swift */; };
+		FD7F9891AB07EA0323E723D4 /* Pods_El_Mutamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B5EC915741306C030ED01A /* Pods_El_Mutamer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		36B5EC915741306C030ED01A /* Pods_El_Mutamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_El_Mutamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ADEE91A2DFDB4BF3F9780B0 /* Pods-El-Mutamer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El-Mutamer.release.xcconfig"; path = "Pods/Target Support Files/Pods-El-Mutamer/Pods-El-Mutamer.release.xcconfig"; sourceTree = "<group>"; };
+		E8144F8321CD5A120004F986 /* TrendsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsCollectionViewCell.swift; sourceTree = "<group>"; };
+		E8144F8821CD607F0004F986 /* MoatamratViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoatamratViewController.swift; sourceTree = "<group>"; };
+		E8144F8A21CE42590004F986 /* MaaredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaaredViewController.swift; sourceTree = "<group>"; };
+		E8144F9221CE54270004F986 /* MoatamratSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoatamratSubViewController.swift; sourceTree = "<group>"; };
+		E8144F9921CE5A270004F986 /* MaaredSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaaredSelectViewController.swift; sourceTree = "<group>"; };
+		E8144F9B21CE5AAD0004F986 /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		E853750021C5B1A2001EE570 /* El-Mutamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "El-Mutamer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E853750321C5B1A2001EE570 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E853750521C5B1A2001EE570 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E853750A21C5B1A4001EE570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E853750D21C5B1A4001EE570 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E853750F21C5B1A4001EE570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E853751921C5B355001EE570 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		E853751A21C5B355001EE570 /* extension+CALayer+ApplyShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+CALayer+ApplyShadow.swift"; sourceTree = "<group>"; };
+		E853751B21C5B355001EE570 /* extension+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+Gradient.swift"; sourceTree = "<group>"; };
+		E853751C21C5B355001EE570 /* extension+NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		E853751D21C5B355001EE570 /* extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+String.swift"; sourceTree = "<group>"; };
+		E853751E21C5B355001EE570 /* extension+UIColor+UIFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIColor+UIFonts.swift"; sourceTree = "<group>"; };
+		E853751F21C5B355001EE570 /* extension+UITextField+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UITextField+UILabel.swift"; sourceTree = "<group>"; };
+		E853752021C5B355001EE570 /* extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIViewController.swift"; sourceTree = "<group>"; };
+		E853752A21C5B39F001EE570 /* GESSTwoBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GESSTwoBold.otf; sourceTree = "<group>"; };
+		E853752B21C5B39F001EE570 /* GESSTwoLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GESSTwoLight.otf; sourceTree = "<group>"; };
+		E853752C21C5B39F001EE570 /* GESSTwoMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GESSTwoMedium.otf; sourceTree = "<group>"; };
+		E853753221C5B8E4001EE570 /* Cairo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Black.ttf"; sourceTree = "<group>"; };
+		E853753321C5B8E4001EE570 /* Cairo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Bold.ttf"; sourceTree = "<group>"; };
+		E853753421C5B8E4001EE570 /* Cairo-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-ExtraLight.ttf"; sourceTree = "<group>"; };
+		E853753521C5B8E4001EE570 /* Cairo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Light.ttf"; sourceTree = "<group>"; };
+		E853753621C5B8E4001EE570 /* Cairo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Regular.ttf"; sourceTree = "<group>"; };
+		E853753721C5B8E4001EE570 /* Cairo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-SemiBold.ttf"; sourceTree = "<group>"; };
+		E853753E21C5BE67001EE570 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E853754121C5C334001EE570 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E853754221C5C335001EE570 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E853754E21C5C9D7001EE570 /* latesNewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = latesNewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		E853755021C5C9D7001EE570 /* SliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCell.swift; sourceTree = "<group>"; };
+		E8DA6ABA21C89E1C009B9EC9 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
+		F840E1CF150704B96565E0EC /* Pods-El-Mutamer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El-Mutamer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-El-Mutamer/Pods-El-Mutamer.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E85374FD21C5B1A2001EE570 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD7F9891AB07EA0323E723D4 /* Pods_El_Mutamer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DF5A1867CB8AA1344E926BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1CF150704B96565E0EC /* Pods-El-Mutamer.debug.xcconfig */,
+				3ADEE91A2DFDB4BF3F9780B0 /* Pods-El-Mutamer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		699B76460A04FF3C8D5A9D72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36B5EC915741306C030ED01A /* Pods_El_Mutamer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8144F9421CE546B0004F986 /* MoatamratViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E8144F8821CD607F0004F986 /* MoatamratViewController.swift */,
+				E8144F9221CE54270004F986 /* MoatamratSubViewController.swift */,
+			);
+			path = MoatamratViewController;
+			sourceTree = "<group>";
+		};
+		E8144F9821CE59F60004F986 /* MaaredViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E8144F9921CE5A270004F986 /* MaaredSelectViewController.swift */,
+				E8144F8A21CE42590004F986 /* MaaredViewController.swift */,
+			);
+			path = MaaredViewController;
+			sourceTree = "<group>";
+		};
+		E85374F721C5B1A2001EE570 = {
+			isa = PBXGroup;
+			children = (
+				E853750221C5B1A2001EE570 /* El-Mutamer */,
+				E853750121C5B1A2001EE570 /* Products */,
+				5DF5A1867CB8AA1344E926BD /* Pods */,
+				699B76460A04FF3C8D5A9D72 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E853750121C5B1A2001EE570 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E853750021C5B1A2001EE570 /* El-Mutamer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E853750221C5B1A2001EE570 /* El-Mutamer */ = {
+			isa = PBXGroup;
+			children = (
+				E853750321C5B1A2001EE570 /* AppDelegate.swift */,
+				E853753021C5B46F001EE570 /* ViewController */,
+				E853754D21C5C9D7001EE570 /* View */,
+				E853752921C5B39F001EE570 /* GE FONT */,
+				E853751821C5B355001EE570 /* Extensions */,
+				E853753121C5B8E4001EE570 /* Fonts */,
+				E853750A21C5B1A4001EE570 /* Assets.xcassets */,
+				E853750C21C5B1A4001EE570 /* LaunchScreen.storyboard */,
+				E853750F21C5B1A4001EE570 /* Info.plist */,
+			);
+			path = "El-Mutamer";
+			sourceTree = "<group>";
+		};
+		E853751821C5B355001EE570 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E853751921C5B355001EE570 /* CustomCell.swift */,
+				E853751A21C5B355001EE570 /* extension+CALayer+ApplyShadow.swift */,
+				E853751B21C5B355001EE570 /* extension+Gradient.swift */,
+				E853751C21C5B355001EE570 /* extension+NSLayoutConstraint.swift */,
+				E853751D21C5B355001EE570 /* extension+String.swift */,
+				E853751E21C5B355001EE570 /* extension+UIColor+UIFonts.swift */,
+				E853751F21C5B355001EE570 /* extension+UITextField+UILabel.swift */,
+				E853752021C5B355001EE570 /* extension+UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E853752921C5B39F001EE570 /* GE FONT */ = {
+			isa = PBXGroup;
+			children = (
+				E853752A21C5B39F001EE570 /* GESSTwoBold.otf */,
+				E853752B21C5B39F001EE570 /* GESSTwoLight.otf */,
+				E853752C21C5B39F001EE570 /* GESSTwoMedium.otf */,
+			);
+			path = "GE FONT";
+			sourceTree = "<group>";
+		};
+		E853753021C5B46F001EE570 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E853750521C5B1A2001EE570 /* LoginViewController.swift */,
+				E853753E21C5BE67001EE570 /* RegisterViewController.swift */,
+				E8DA6ABA21C89E1C009B9EC9 /* SideMenuTableViewController.swift */,
+				E853754621C5C345001EE570 /* HomeTabs */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E853753121C5B8E4001EE570 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E853753221C5B8E4001EE570 /* Cairo-Black.ttf */,
+				E853753321C5B8E4001EE570 /* Cairo-Bold.ttf */,
+				E853753421C5B8E4001EE570 /* Cairo-ExtraLight.ttf */,
+				E853753521C5B8E4001EE570 /* Cairo-Light.ttf */,
+				E853753621C5B8E4001EE570 /* Cairo-Regular.ttf */,
+				E853753721C5B8E4001EE570 /* Cairo-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E853754621C5C345001EE570 /* HomeTabs */ = {
+			isa = PBXGroup;
+			children = (
+				E853754121C5C334001EE570 /* TabBarController.swift */,
+				E853754221C5C335001EE570 /* HomeViewController.swift */,
+				E8144F9B21CE5AAD0004F986 /* profileViewController.swift */,
+				E8144F9421CE546B0004F986 /* MoatamratViewController */,
+				E8144F9821CE59F60004F986 /* MaaredViewController */,
+			);
+			path = HomeTabs;
+			sourceTree = "<group>";
+		};
+		E853754D21C5C9D7001EE570 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E853755021C5C9D7001EE570 /* SliderCell.swift */,
+				E853754E21C5C9D7001EE570 /* latesNewsCollectionViewCell.swift */,
+				E8144F8321CD5A120004F986 /* TrendsCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E85374FF21C5B1A2001EE570 /* El-Mutamer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E853751221C5B1A4001EE570 /* Build configuration list for PBXNativeTarget "El-Mutamer" */;
+			buildPhases = (
+				1FB516BE82EBCEB3CD8A09F2 /* [CP] Check Pods Manifest.lock */,
+				E85374FC21C5B1A2001EE570 /* Sources */,
+				E85374FD21C5B1A2001EE570 /* Frameworks */,
+				E85374FE21C5B1A2001EE570 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "El-Mutamer";
+			productName = "El-Mutamer";
+			productReference = E853750021C5B1A2001EE570 /* El-Mutamer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E85374F821C5B1A2001EE570 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = ITGeeKs;
+				TargetAttributes = {
+					E85374FF21C5B1A2001EE570 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = E85374FB21C5B1A2001EE570 /* Build configuration list for PBXProject "El-Mutamer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E85374F721C5B1A2001EE570;
+			productRefGroup = E853750121C5B1A2001EE570 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E85374FF21C5B1A2001EE570 /* El-Mutamer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E85374FE21C5B1A2001EE570 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E853750E21C5B1A4001EE570 /* LaunchScreen.storyboard in Resources */,
+				E853753D21C5B8E4001EE570 /* Cairo-SemiBold.ttf in Resources */,
+				E853753821C5B8E4001EE570 /* Cairo-Black.ttf in Resources */,
+				E853752F21C5B39F001EE570 /* GESSTwoMedium.otf in Resources */,
+				E853750B21C5B1A4001EE570 /* Assets.xcassets in Resources */,
+				E853753C21C5B8E4001EE570 /* Cairo-Regular.ttf in Resources */,
+				E853752E21C5B39F001EE570 /* GESSTwoLight.otf in Resources */,
+				E853752D21C5B39F001EE570 /* GESSTwoBold.otf in Resources */,
+				E853753921C5B8E4001EE570 /* Cairo-Bold.ttf in Resources */,
+				E853753B21C5B8E4001EE570 /* Cairo-Light.ttf in Resources */,
+				E853753A21C5B8E4001EE570 /* Cairo-ExtraLight.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FB516BE82EBCEB3CD8A09F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-El-Mutamer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E85374FC21C5B1A2001EE570 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E853752821C5B35D001EE570 /* extension+UIViewController.swift in Sources */,
+				E853754421C5C335001EE570 /* TabBarController.swift in Sources */,
+				E853750621C5B1A2001EE570 /* LoginViewController.swift in Sources */,
+				E8144F8B21CE42590004F986 /* MaaredViewController.swift in Sources */,
+				E853752721C5B35D001EE570 /* extension+UITextField+UILabel.swift in Sources */,
+				E8DA6ABB21C89E1D009B9EC9 /* SideMenuTableViewController.swift in Sources */,
+				E853755321C5C9DD001EE570 /* SliderCell.swift in Sources */,
+				E853752121C5B35D001EE570 /* CustomCell.swift in Sources */,
+				E853754521C5C335001EE570 /* HomeViewController.swift in Sources */,
+				E8144F9321CE54270004F986 /* MoatamratSubViewController.swift in Sources */,
+				E8144F8421CD5A130004F986 /* TrendsCollectionViewCell.swift in Sources */,
+				E8144F9A21CE5A270004F986 /* MaaredSelectViewController.swift in Sources */,
+				E8144F8921CD607F0004F986 /* MoatamratViewController.swift in Sources */,
+				E853752621C5B35D001EE570 /* extension+UIColor+UIFonts.swift in Sources */,
+				E853752321C5B35D001EE570 /* extension+Gradient.swift in Sources */,
+				E853752221C5B35D001EE570 /* extension+CALayer+ApplyShadow.swift in Sources */,
+				E853750421C5B1A2001EE570 /* AppDelegate.swift in Sources */,
+				E8144F9C21CE5AAD0004F986 /* profileViewController.swift in Sources */,
+				E853753F21C5BE67001EE570 /* RegisterViewController.swift in Sources */,
+				E853752521C5B35D001EE570 /* extension+String.swift in Sources */,
+				E853752421C5B35D001EE570 /* extension+NSLayoutConstraint.swift in Sources */,
+				E853755121C5C9DD001EE570 /* latesNewsCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E853750C21C5B1A4001EE570 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E853750D21C5B1A4001EE570 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E853751021C5B1A4001EE570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E853751121C5B1A4001EE570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E853751321C5B1A4001EE570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F840E1CF150704B96565E0EC /* Pods-El-Mutamer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "El-Mutamer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Gawla.info.El-Mutamer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E853751421C5B1A4001EE570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ADEE91A2DFDB4BF3F9780B0 /* Pods-El-Mutamer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "El-Mutamer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Gawla.info.El-Mutamer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E85374FB21C5B1A2001EE570 /* Build configuration list for PBXProject "El-Mutamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E853751021C5B1A4001EE570 /* Debug */,
+				E853751121C5B1A4001EE570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E853751221C5B1A4001EE570 /* Build configuration list for PBXNativeTarget "El-Mutamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E853751321C5B1A4001EE570 /* Debug */,
+				E853751421C5B1A4001EE570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E85374F821C5B1A2001EE570 /* Project object */;
+}
