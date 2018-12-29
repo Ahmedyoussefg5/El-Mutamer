@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SideMenu
 
 extension UIViewController {
     
@@ -76,12 +77,7 @@ extension UIViewController {
             }
         }
     }
-    
-    
-    
-    
-    
-    
+
     
     func interactionConfig(with indicator: UIActivityIndicatorView, to status: Bool) {
         if status {
@@ -112,15 +108,32 @@ extension UIViewController {
         // items
         let menuButton = UIBarButtonItem(image: #imageLiteral(resourceName: "slide menue"), landscapeImagePhone: #imageLiteral(resourceName: "slide menue"), style: .plain, target: self, action: #selector(handleMenu))
        navigationItem.rightBarButtonItem = menuButton
-        
-        let searchButton = UIBarButtonItem(image: #imageLiteral(resourceName: "search (2)"), landscapeImagePhone: #imageLiteral(resourceName: "search (2)"), style: .plain, target: self, action: #selector(handleMenu))
+        let searchImage = UIImage(named: "searchsearch")
+        let searchButton = UIBarButtonItem(image: searchImage, landscapeImagePhone: searchImage, style: .plain, target: self, action: #selector(handleMenu))
         navigationItem.leftBarButtonItem = searchButton
+        
+        setupSideMenu()
     }
     
     @objc private func handleMenu() {
-        
+        present(SideMenuManager.default.menuRightNavigationController!, animated: true, completion: nil)
     }
     @objc private func handleSearch() {
         
     }
+    
+    fileprivate func setupSideMenu() {
+        let menuRightNavigationController = UISideMenuNavigationController(rootViewController: SideMenuTableViewController())
+
+        //menuRightNavigationController.delegate = self as? UINavigationControllerDelegate
+
+        SideMenuManager.default.menuRightNavigationController = menuRightNavigationController
+        //  SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.view)
+        //  SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.view)
+        // (Optional) Prevent status bar area from turning black when menu appears:
+        SideMenuManager.default.menuFadeStatusBar = false
+    }
+
 }

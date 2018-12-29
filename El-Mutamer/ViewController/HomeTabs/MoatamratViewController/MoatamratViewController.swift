@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SideMenu
 
 class MoatamratSelectViewController: UIViewController {
 
@@ -33,7 +34,7 @@ class MoatamratSelectViewController: UIViewController {
 
     
     @objc func handleMenuTapped() {
-        // present(SideMenuManager.default.menuRightNavigationController!, animated: true, completion: nil)
+         present(SideMenuManager.default.menuRightNavigationController!, animated: true, completion: nil)
     }
     
     @objc func handleSearchTapped() {

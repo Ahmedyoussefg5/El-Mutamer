@@ -30,7 +30,7 @@ class TrendsCollectionViewCell : UICollectionViewCell {
     }()
     let companyImageView: UIImageView = {
         let imgV = UIImageView()
-        imgV.image = UIImage(named: "company name")
+        imgV.image = UIImage(named: "company namecompany name")
         imgV.contentMode = .scaleToFill
         return imgV
     }()
@@ -46,7 +46,7 @@ class TrendsCollectionViewCell : UICollectionViewCell {
     
     let dateImageView: UIImageView = {
         let imgV = UIImageView()
-        imgV.image = UIImage(named: "calender")
+        imgV.image = UIImage(named: "calendercalender")
         imgV.contentMode = .scaleToFill
         return imgV
     }()
@@ -62,7 +62,7 @@ class TrendsCollectionViewCell : UICollectionViewCell {
     
     let commentsImageView: UIImageView = {
         let imgV = UIImageView()
-        imgV.image = UIImage(named: "comment")
+        imgV.image = UIImage(named: "commentcomment")
         imgV.contentMode = .scaleToFill
         return imgV
     }()
@@ -78,7 +78,7 @@ class TrendsCollectionViewCell : UICollectionViewCell {
     
     let seenImageView: UIImageView = {
         let imgV = UIImageView()
-        imgV.image = UIImage(named: "view")
+        imgV.image = UIImage(named: "viewview")
         imgV.contentMode = .scaleToFill
         return imgV
     }()
@@ -94,7 +94,7 @@ class TrendsCollectionViewCell : UICollectionViewCell {
     
     let likesImageView: UIImageView = {
         let imgV = UIImageView()
-        imgV.image = UIImage(named: "like")
+        imgV.image = UIImage(named: "likelike")
         imgV.contentMode = .scaleToFill
         return imgV
     }()
@@ -112,7 +112,7 @@ class TrendsCollectionViewCell : UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = UIColor.blue
+        backgroundColor = UIColor.white
         setupView()
 
 
@@ -140,7 +140,7 @@ class TrendsCollectionViewCell : UICollectionViewCell {
         companydateLable.anchorWithCenterXY(top: nil, leading: nil, bottom: nil, trailing: dateImageView.leadingAnchor, centerX: nil, centerY: companyImageView.centerYAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 3),size: .init(width: contentView.frame.width * 0.18, height: 0))
         
         contentView.addSubview(seenImageView)
-        seenImageView.anchorWithCenterXY(top: nil, leading: nil, bottom: nil, trailing: companydateLable.leadingAnchor, centerX: nil, centerY: companyImageView.centerYAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 3),size: .init(width: 15, height: 15))
+        seenImageView.anchorWithCenterXY(top: nil, leading: nil, bottom: nil, trailing: companydateLable.leadingAnchor, centerX: nil, centerY: companyImageView.centerYAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 3),size: .init(width: 15, height: 10))
         
         contentView.addSubview(seenLable)
         seenLable.anchorWithCenterXY(top: nil, leading: nil, bottom: nil, trailing: seenImageView.leadingAnchor, centerX: nil, centerY: companyImageView.centerYAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 3),size: .init(width: contentView.frame.width * 0.08, height: 0))
@@ -159,11 +159,30 @@ class TrendsCollectionViewCell : UICollectionViewCell {
         
     }
     
-    func setupCell(type: Int) {
-        
-
-        
+    func setupCell(data: Datum) {
+        if let url = data.mainImage, let imgUrl = URL(string: url) {
+            cellImageView.kf.setImage(with: imgUrl)
+        }
+        if let name = data.adress {
+            commentsLable.text = name
+        }
+        if let date = data.date {
+            companydateLable.text = date
+        }
+        if let views = data.countViews {
+            seenLable.text = views
+        }
+        if let likes = data.countLikes {
+            likesLable.text = "\(likes)"
+        }
+        if let comments = data.countComments {
+            commentsLable.text = "\(comments)"
+        }
+        if let title = data.title {
+            cellSubName.text = title
+        }
     }
+    
     
     
     

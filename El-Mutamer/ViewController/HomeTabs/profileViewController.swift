@@ -77,7 +77,10 @@ class ProfileViewController: UIViewController {
         let profileImageView: UIImageView = {
             let imgV = UIImageView()
             imgV.contentMode = .scaleToFill
-            imgV.image = UIImage(named: "Layer 7")
+            imgV.image = UIImage(named: "Forma 1")
+            imgV.layer.cornerRadius = 50
+          //  imgV.layer.masksToBounds = true
+            imgV.layer.applySketchShadow(color: .black19, alpha: 1, x: 0, y: 8, blur: 10, spread: 0)
             return imgV
         }()
         let mailLable: UILabel = {
@@ -127,6 +130,26 @@ class ProfileViewController: UIViewController {
             return view
         }()
         
+        let nameLable: UILabel = {
+            let lable = UILabel()
+            lable.textColor = .black
+            lable.font = UIFont.CairoSemiBold(of: 12)
+            let title = "ta sad asdas dfasdsa"
+            lable.textAlignment = .center
+            lable.text = title
+            return lable
+        }()
+        let jobLable: UILabel = {
+            let lable = UILabel()
+            lable.textColor = #colorLiteral(red: 0.3803488016, green: 0.3804177642, blue: 0.3803390563, alpha: 1)
+            lable.font = UIFont.CairoSemiBold(of: 10)
+            let title = "tanta, dfasdsa"
+            lable.textAlignment = .center
+            lable.text = title
+            return lable
+        }()
+
+        
         view.addSubview(scrollView)
         scrollView.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor)
         
@@ -142,29 +165,48 @@ class ProfileViewController: UIViewController {
             imgArray[viewIndex].anchorWithCenterXY(top: nil, leading: stack.arrangedSubviews[viewIndex].leadingAnchor, bottom: nil, trailing: nil, centerX: nil, centerY: stack.arrangedSubviews[viewIndex].centerYAnchor, padding: .init(top: 0, left: 5, bottom: 0, right: 0), size: .init(width: 30, height: 25))
             
             stack.arrangedSubviews[viewIndex].addSubview(txtArray[viewIndex])
-            txtArray[viewIndex].anchorWithCenterXY(top: nil, leading: stack.arrangedSubviews[viewIndex].leadingAnchor, bottom: nil, trailing: stack.arrangedSubviews[viewIndex].trailingAnchor, centerX: nil, centerY: stack.arrangedSubviews[viewIndex].centerYAnchor, padding: .init(top: 0, left: 40, bottom: 0, right: 0), size: .init(width: 30, height: 25))
+            txtArray[viewIndex].anchorWithCenterXY(top: nil, leading: imgArray[viewIndex].leadingAnchor, bottom: nil, trailing: stack.arrangedSubviews[viewIndex].trailingAnchor, centerX: nil, centerY: stack.arrangedSubviews[viewIndex].centerYAnchor, padding: .init(top: 0, left: 40, bottom: 0, right: 0), size: .init(width: 30, height: 25))
         }
         
         scrollView.addSubview(stack)
-        stack.anchor(top: scrollView.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 5, left: 5, bottom: 0, right: 0), size: .init(width: view.frame.width * 0.55, height: 180))
+        stack.anchor(top: scrollView.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 5, left: 5, bottom: 0, right: 0), size: .init(width: view.frame.width * 0.55, height: 150))
         
+        scrollView.addSubview(profileImageView)
+        profileImageView.anchor(top: scrollView.topAnchor, leading: nil, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 5, left: 0, bottom: 0, right: 5), size: .init(width: 100, height: 100))
         
+        scrollView.addSubview(nameLable)
+        nameLable.anchorWithCenterXY(top: profileImageView.bottomAnchor, leading: nil, bottom: nil, trailing: nil, centerX: profileImageView.centerXAnchor, centerY: nil,padding: .init(top: 10, left: 0, bottom: 0, right: 0) , size: .init(width: 120, height: 20))
         
+        scrollView.addSubview(jobLable)
+        jobLable.anchorWithCenterXY(top: nameLable.bottomAnchor, leading: nil, bottom: nil, trailing: nil, centerX: profileImageView.centerXAnchor, centerY: nil, size: .init(width: 100, height: 15))
         
+        let lineView: UIView = {
+            let view = UIView()
+            view.backgroundColor = #colorLiteral(red: 0.8610689044, green: 0.08137863129, blue: 0, alpha: 1)
+            return view
+        }()
+
+        scrollView.addSubview(lineView)
+        lineView.anchorWithCenterXY(top: stack.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, centerX: nil, centerY: nil,padding: .init(top: 8, left: 0, bottom: 0, right: 0) , size: .init(width: 0, height: 1))
         
+        let joinLable: UILabel = {
+            let lable = UILabel()
+            lable.textColor = #colorLiteral(red: 0.8610689044, green: 0.08137863129, blue: 0, alpha: 1)
+            lable.font = UIFont.CairoSemiBold(of: 12)
+            let title = "المشاركات"
+            lable.textAlignment = .right
+            lable.text = title
+            return lable
+        }()
+        scrollView.addSubview(joinLable)
+        joinLable.anchorWithCenterXY(top: lineView.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, centerX: nil, centerY: nil,padding: .init(top: 7, left: 0, bottom: 0, right: 5) , size: .init(width: 0, height: 15))
+
         
-        
-        
-        
-        
-//        scrollView.addSubview(trendsCollectionView)
-//        trendsCollectionView.anchor(top: latesNewsCollectionView.bottomAnchor, leading: sliderCollectionView.leadingAnchor, bottom: view.bottomAnchor, trailing: sliderCollectionView.trailingAnchor, padding: .init(top: 40, left: 0, bottom: 0, right: 0), size: .init(width: 0, height: 0))
+        scrollView.addSubview(trendsCollectionView)
+        trendsCollectionView.anchor(top: joinLable.bottomAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 7, left: 5, bottom: 5, right: 5), size: .init(width: 0, height: 0))
 //
-//        scrollView.addSubview(latestNewsLable)
-//        latestNewsLable.anchor(top: nil, leading: sliderCollectionView.leadingAnchor, bottom: latesNewsCollectionView.topAnchor, trailing: latesNewsCollectionView.trailingAnchor, padding: .init(top: 15, left: 0, bottom: 3, right: 5), size: .init(width: 0, height: 20))
-//
-//        scrollView.addSubview(trendsLable)
-//        trendsLable.anchor(top: nil, leading: view.leadingAnchor, bottom: trendsCollectionView.topAnchor, trailing: view.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 1, right: 5), size: .init(width: 0, height: 20))
+
+
     }
 
 }
@@ -202,7 +244,8 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+       // let vc = ShopViewController(shopId: 1)
+       // navigationController?.pushViewController(vc, animated: true)
         
     }
     

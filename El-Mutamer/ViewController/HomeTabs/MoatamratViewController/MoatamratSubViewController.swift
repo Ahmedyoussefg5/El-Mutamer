@@ -85,7 +85,8 @@ extension MoatamratViewController : UICollectionViewDelegate, UICollectionViewDa
 
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        //let vc = ShopViewController(data: <#T##Datum#>)
+        //navigationController?.pushViewController(vc, animated: true)
         
     }
     

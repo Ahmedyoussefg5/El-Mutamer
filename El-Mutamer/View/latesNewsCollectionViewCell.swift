@@ -8,14 +8,13 @@
 
 import Foundation
 import UIKit
-//import Kingfisher
 
 class LatesNewsCollectionView : UICollectionViewCell {
     
     let cellImageView: UIImageView = {
         let imgV = UIImageView()
         imgV.contentMode = .scaleToFill
-        imgV.image = UIImage(named: "Layer 7")
+        //imgV.image = UIImage(named: "Layer 7")
         return imgV
     }()
     
@@ -31,7 +30,7 @@ class LatesNewsCollectionView : UICollectionViewCell {
         lbl.font = UIFont.CairoBold(of: 14)
         lbl.numberOfLines = 1
         lbl.textAlignment = .center
-        lbl.text = "شسيشسيشسيشسيشسيشسيشسيشسيشسيشسي"
+        //lbl.text = "شسيشسيشسيشسيشسيشسيشسيشسيشسيشسي"
         lbl.textColor = .white
         return lbl
     }()
@@ -61,8 +60,14 @@ class LatesNewsCollectionView : UICollectionViewCell {
         
     }
     
-    func setupCell(type: Int) {
-        
+    func setupCell(data: Datum) {
+        if let url = data.mainImage, let imgUrl = URL(string: url) {
+            cellImageView.kf.indicatorType = .activity
+            cellImageView.kf.setImage(with: imgUrl)
+        }
+        if let title = data.title {
+            cellSubName.text = title
+        }
         
         
     }

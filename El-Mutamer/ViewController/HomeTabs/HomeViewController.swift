@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import SideMenu
 
 class HomeViewController: UIViewController {
     let scrollView: UIScrollView = {
         let scroll = UIScrollView()
         scroll.alwaysBounceVertical = true
-        scroll.contentSize.height = 3000
+        scroll.contentSize.height = 1200
         //scroll.showsVerticalScrollIndicator = false
         return scroll
     }()
@@ -40,9 +41,6 @@ class HomeViewController: UIViewController {
     
     lazy var latesNewsCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        //layout.estimatedItemSize.height = UITableViewAutomaticDimension
-        //tableView.rowHeight = UITableViewAutomaticDimension
-        //tableView.estimatedRowHeight = 120.0
         layout.scrollDirection = .horizontal
         let collV = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collV.backgroundColor = .white
@@ -56,7 +54,6 @@ class HomeViewController: UIViewController {
         layout.scrollDirection = .vertical
         let collV = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collV.backgroundColor = .white
-        collV.isScrollEnabled = false
         collV.register(TrendsCollectionViewCell.self, forCellWithReuseIdentifier: trendsCellIdentifier)
         collV.delegate = self
         collV.dataSource = self
@@ -77,7 +74,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.9998950362, green: 1, blue: 0.9998714328, alpha: 1)
         Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(moveToNextPage), userInfo: nil, repeats: true)
-
+        getLatestNewsData()
+        getData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -85,7 +83,6 @@ class HomeViewController: UIViewController {
         setupNavBar(title: "الرئيسبة")
 
     }
-    
     
     @objc func moveToNextPage () {
         let nextIndexPath: IndexPath
@@ -99,7 +96,7 @@ class HomeViewController: UIViewController {
     }
     
     @objc func handleMenuTapped() {
-        // present(SideMenuManager.default.menuRightNavigationController!, animated: true, completion: nil)
+         present(SideMenuManager.default.menuRightNavigationController!, animated: true, completion: nil)
     }
     
     @objc func handleSearchTapped() {
@@ -141,7 +138,7 @@ class HomeViewController: UIViewController {
         latesNewsCollectionView.anchor(top: sliderCollectionView.bottomAnchor, leading: sliderCollectionView.leadingAnchor, bottom: nil, trailing: sliderCollectionView.trailingAnchor, padding: .init(top: 40, left: 0, bottom: 0, right: 0), size: .init(width: 0, height: view.frame.height * 0.15))
         
         scrollView.addSubview(trendsCollectionView)
-        trendsCollectionView.anchor(top: latesNewsCollectionView.bottomAnchor, leading: sliderCollectionView.leadingAnchor, bottom: view.bottomAnchor, trailing: sliderCollectionView.trailingAnchor, padding: .init(top: 40, left: 0, bottom: 0, right: 0), size: .init(width: 0, height: 0))
+        trendsCollectionView.anchor(top: latesNewsCollectionView.bottomAnchor, leading: sliderCollectionView.leadingAnchor, bottom: view.bottomAnchor, trailing: sliderCollectionView.trailingAnchor, padding: .init(top: 40, left: 0, bottom: 50, right: 0), size: .init(width: 0, height: 0))
         
         scrollView.addSubview(latestNewsLable)
         latestNewsLable.anchor(top: nil, leading: sliderCollectionView.leadingAnchor, bottom: latesNewsCollectionView.topAnchor, trailing: latesNewsCollectionView.trailingAnchor, padding: .init(top: 15, left: 0, bottom: 3, right: 5), size: .init(width: 0, height: 20))
@@ -149,6 +146,41 @@ class HomeViewController: UIViewController {
         trendsLable.anchor(top: nil, leading: view.leadingAnchor, bottom: trendsCollectionView.topAnchor, trailing: view.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 1, right: 5), size: .init(width: 0, height: 20))
     }
 
+    private var conferencesData: [Datum]? {
+        didSet {
+            trendsCollectionView.reloadData()
+        }
+    }
+    fileprivate func getData() {
+        GetDataFromApi.shared.getDataAPI(Conferences.self, url: conferencesUrl) { (message, data) in
+            if message == nil {
+                if let data = data?.data {
+                    self.conferencesData = data
+                    
+                }
+            } else {
+                print(message ?? "")
+            }
+        }
+    }
+    
+    
+    private var latestNewsData: [Datum]? {
+        didSet {
+            latesNewsCollectionView.reloadData()
+        }
+    }
+    fileprivate func getLatestNewsData() {
+        GetDataFromApi.shared.getDataAPI(Conferences.self, url: latestNewsUrl) { (message, data) in
+            if message == nil {
+                if let data = data?.data {
+                    self.latestNewsData = data
+                }
+            } else {
+                print(message ?? "")
+            }
+        }
+    }
 }
 
 extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
@@ -156,26 +188,35 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == sliderCollectionView {
             return 10
-        } else {
-            return 30
+        } else if collectionView == trendsCollectionView {
+            return conferencesData?.count ?? 0
+        } else if collectionView == latesNewsCollectionView {
+            return latestNewsData?.count ?? 0
         }
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if collectionView == sliderCollectionView {
             let cell = sliderCollectionView.dequeueReusableCell(withReuseIdentifier: sliderCellIdentifier, for: indexPath) as! SliderCell
-            cell.cellImageView.image = nil
+            cell.cellImageView.image = #imageLiteral(resourceName: "Layer 10")
             return cell
         }
         
        else if collectionView == latesNewsCollectionView {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: latestCellIdentifier, for: indexPath) as! LatesNewsCollectionView
+            if let data = conferencesData?[indexPath.row] {
+                cell.setupCell(data: data)
+            }
             return cell
         }
         
        else if collectionView == trendsCollectionView {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: trendsCellIdentifier, for: indexPath) as! TrendsCollectionViewCell
+            if let data = conferencesData?[indexPath.row] {
+                cell.setupCell(data: data)
+            }
             return cell
         }
         
@@ -218,7 +259,18 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        if collectionView == trendsCollectionView {
+            if let data = conferencesData?[indexPath.row] {
+                let vc = ShopViewController(data: data)
+                navigationController?.pushViewController(vc, animated: true)
+            }
+        } else if collectionView == latesNewsCollectionView {
+            if let data = latestNewsData?[indexPath.row] {
+                let vc = ShopViewController(data: data)
+                navigationController?.pushViewController(vc, animated: true)
+            }
+
+        }
         
     }
     

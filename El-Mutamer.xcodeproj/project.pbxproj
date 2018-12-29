@@ -13,6 +13,15 @@
 		E8144F9321CE54270004F986 /* MoatamratSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144F9221CE54270004F986 /* MoatamratSubViewController.swift */; };
 		E8144F9A21CE5A270004F986 /* MaaredSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144F9921CE5A270004F986 /* MaaredSelectViewController.swift */; };
 		E8144F9C21CE5AAD0004F986 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144F9B21CE5AAD0004F986 /* profileViewController.swift */; };
+		E8144FA721CE7FC20004F986 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144FA521CE7F060004F986 /* ShopViewController.swift */; };
+		E8144FA821CE81B60004F986 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144FA421CE7F060004F986 /* TableViewController.swift */; };
+		E8144FA921CE81B80004F986 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144FA321CE7F060004F986 /* MapViewController.swift */; };
+		E8144FAB21CED1480004F986 /* GalaryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144FAA21CED1480004F986 /* GalaryCollectionViewController.swift */; };
+		E8144FAD21CED2E30004F986 /* SponsersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144FAC21CED2E20004F986 /* SponsersCollectionViewController.swift */; };
+		E8144FAE21CED3D60004F986 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144FA221CE7F060004F986 /* InfoViewController.swift */; };
+		E833DB5E21D65538000EB8AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E833DB5D21D65538000EB8AD /* Constants.swift */; };
+		E833DB6E21D65645000EB8AD /* CodableMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E833DB6B21D65636000EB8AD /* CodableMethod.swift */; };
+		E833DB7121D656A4000EB8AD /* ConferencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E833DB7021D656A4000EB8AD /* ConferencesModel.swift */; };
 		E853750421C5B1A2001EE570 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853750321C5B1A2001EE570 /* AppDelegate.swift */; };
 		E853750621C5B1A2001EE570 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853750521C5B1A2001EE570 /* LoginViewController.swift */; };
 		E853750B21C5B1A4001EE570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E853750A21C5B1A4001EE570 /* Assets.xcassets */; };
@@ -25,9 +34,6 @@
 		E853752621C5B35D001EE570 /* extension+UIColor+UIFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853751E21C5B355001EE570 /* extension+UIColor+UIFonts.swift */; };
 		E853752721C5B35D001EE570 /* extension+UITextField+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853751F21C5B355001EE570 /* extension+UITextField+UILabel.swift */; };
 		E853752821C5B35D001EE570 /* extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853752021C5B355001EE570 /* extension+UIViewController.swift */; };
-		E853752D21C5B39F001EE570 /* GESSTwoBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E853752A21C5B39F001EE570 /* GESSTwoBold.otf */; };
-		E853752E21C5B39F001EE570 /* GESSTwoLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = E853752B21C5B39F001EE570 /* GESSTwoLight.otf */; };
-		E853752F21C5B39F001EE570 /* GESSTwoMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E853752C21C5B39F001EE570 /* GESSTwoMedium.otf */; };
 		E853753821C5B8E4001EE570 /* Cairo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E853753221C5B8E4001EE570 /* Cairo-Black.ttf */; };
 		E853753921C5B8E4001EE570 /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E853753321C5B8E4001EE570 /* Cairo-Bold.ttf */; };
 		E853753A21C5B8E4001EE570 /* Cairo-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E853753421C5B8E4001EE570 /* Cairo-ExtraLight.ttf */; };
@@ -52,6 +58,21 @@
 		E8144F9221CE54270004F986 /* MoatamratSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoatamratSubViewController.swift; sourceTree = "<group>"; };
 		E8144F9921CE5A270004F986 /* MaaredSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaaredSelectViewController.swift; sourceTree = "<group>"; };
 		E8144F9B21CE5AAD0004F986 /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		E8144FA221CE7F060004F986 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		E8144FA321CE7F060004F986 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E8144FA421CE7F060004F986 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E8144FA521CE7F060004F986 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		E8144FAA21CED1480004F986 /* GalaryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaryCollectionViewController.swift; sourceTree = "<group>"; };
+		E8144FAC21CED2E20004F986 /* SponsersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsersCollectionViewController.swift; sourceTree = "<group>"; };
+		E833DB5D21D65538000EB8AD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E833DB6421D65636000EB8AD /* AuthService+Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthService+Login.swift"; sourceTree = "<group>"; };
+		E833DB6521D65636000EB8AD /* AuthService+LoginSocial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthService+LoginSocial.swift"; sourceTree = "<group>"; };
+		E833DB6621D65636000EB8AD /* AuthService+Registertion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthService+Registertion.swift"; sourceTree = "<group>"; };
+		E833DB6721D65636000EB8AD /* AuthService+UpdateUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthService+UpdateUserData.swift"; sourceTree = "<group>"; };
+		E833DB6821D65636000EB8AD /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E833DB6B21D65636000EB8AD /* CodableMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableMethod.swift; sourceTree = "<group>"; };
+		E833DB6C21D65636000EB8AD /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		E833DB7021D656A4000EB8AD /* ConferencesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferencesModel.swift; sourceTree = "<group>"; };
 		E853750021C5B1A2001EE570 /* El-Mutamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "El-Mutamer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E853750321C5B1A2001EE570 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E853750521C5B1A2001EE570 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -66,9 +87,6 @@
 		E853751E21C5B355001EE570 /* extension+UIColor+UIFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIColor+UIFonts.swift"; sourceTree = "<group>"; };
 		E853751F21C5B355001EE570 /* extension+UITextField+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UITextField+UILabel.swift"; sourceTree = "<group>"; };
 		E853752021C5B355001EE570 /* extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIViewController.swift"; sourceTree = "<group>"; };
-		E853752A21C5B39F001EE570 /* GESSTwoBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GESSTwoBold.otf; sourceTree = "<group>"; };
-		E853752B21C5B39F001EE570 /* GESSTwoLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GESSTwoLight.otf; sourceTree = "<group>"; };
-		E853752C21C5B39F001EE570 /* GESSTwoMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GESSTwoMedium.otf; sourceTree = "<group>"; };
 		E853753221C5B8E4001EE570 /* Cairo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Black.ttf"; sourceTree = "<group>"; };
 		E853753321C5B8E4001EE570 /* Cairo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Bold.ttf"; sourceTree = "<group>"; };
 		E853753421C5B8E4001EE570 /* Cairo-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -131,6 +149,83 @@
 			path = MaaredViewController;
 			sourceTree = "<group>";
 		};
+		E8144F9E21CE70490004F986 /* AuthViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E853750521C5B1A2001EE570 /* LoginViewController.swift */,
+				E853753E21C5BE67001EE570 /* RegisterViewController.swift */,
+			);
+			path = AuthViewControllers;
+			sourceTree = "<group>";
+		};
+		E8144F9F21CE7ECA0004F986 /* MoatamarDetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E8144FA521CE7F060004F986 /* ShopViewController.swift */,
+				E8144FA121CE7F060004F986 /* Shop */,
+			);
+			path = MoatamarDetailsViewController;
+			sourceTree = "<group>";
+		};
+		E8144FA121CE7F060004F986 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				E8144FA221CE7F060004F986 /* InfoViewController.swift */,
+				E8144FAA21CED1480004F986 /* GalaryCollectionViewController.swift */,
+				E8144FA421CE7F060004F986 /* TableViewController.swift */,
+				E8144FAC21CED2E20004F986 /* SponsersCollectionViewController.swift */,
+				E8144FA321CE7F060004F986 /* MapViewController.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		E833DB6221D65636000EB8AD /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				E833DB6321D65636000EB8AD /* AuthService */,
+				E833DB6A21D65636000EB8AD /* Networking */,
+				E833DB6F21D6567F000EB8AD /* Modles */,
+				E833DB6D21D65636000EB8AD /* Support */,
+			);
+			path = ApiService;
+			sourceTree = "<group>";
+		};
+		E833DB6321D65636000EB8AD /* AuthService */ = {
+			isa = PBXGroup;
+			children = (
+				E833DB6421D65636000EB8AD /* AuthService+Login.swift */,
+				E833DB6521D65636000EB8AD /* AuthService+LoginSocial.swift */,
+				E833DB6621D65636000EB8AD /* AuthService+Registertion.swift */,
+				E833DB6721D65636000EB8AD /* AuthService+UpdateUserData.swift */,
+				E833DB6821D65636000EB8AD /* AuthService.swift */,
+			);
+			path = AuthService;
+			sourceTree = "<group>";
+		};
+		E833DB6A21D65636000EB8AD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E833DB6B21D65636000EB8AD /* CodableMethod.swift */,
+				E833DB6C21D65636000EB8AD /* Enums.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E833DB6D21D65636000EB8AD /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		E833DB6F21D6567F000EB8AD /* Modles */ = {
+			isa = PBXGroup;
+			children = (
+				E833DB7021D656A4000EB8AD /* ConferencesModel.swift */,
+			);
+			path = Modles;
+			sourceTree = "<group>";
+		};
 		E85374F721C5B1A2001EE570 = {
 			isa = PBXGroup;
 			children = (
@@ -153,14 +248,15 @@
 			isa = PBXGroup;
 			children = (
 				E853750321C5B1A2001EE570 /* AppDelegate.swift */,
+				E833DB6221D65636000EB8AD /* ApiService */,
 				E853753021C5B46F001EE570 /* ViewController */,
 				E853754D21C5C9D7001EE570 /* View */,
-				E853752921C5B39F001EE570 /* GE FONT */,
 				E853751821C5B355001EE570 /* Extensions */,
 				E853753121C5B8E4001EE570 /* Fonts */,
 				E853750A21C5B1A4001EE570 /* Assets.xcassets */,
 				E853750C21C5B1A4001EE570 /* LaunchScreen.storyboard */,
 				E853750F21C5B1A4001EE570 /* Info.plist */,
+				E833DB5D21D65538000EB8AD /* Constants.swift */,
 			);
 			path = "El-Mutamer";
 			sourceTree = "<group>";
@@ -180,23 +276,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		E853752921C5B39F001EE570 /* GE FONT */ = {
-			isa = PBXGroup;
-			children = (
-				E853752A21C5B39F001EE570 /* GESSTwoBold.otf */,
-				E853752B21C5B39F001EE570 /* GESSTwoLight.otf */,
-				E853752C21C5B39F001EE570 /* GESSTwoMedium.otf */,
-			);
-			path = "GE FONT";
-			sourceTree = "<group>";
-		};
 		E853753021C5B46F001EE570 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E853750521C5B1A2001EE570 /* LoginViewController.swift */,
-				E853753E21C5BE67001EE570 /* RegisterViewController.swift */,
 				E8DA6ABA21C89E1C009B9EC9 /* SideMenuTableViewController.swift */,
+				E8144F9E21CE70490004F986 /* AuthViewControllers */,
 				E853754621C5C345001EE570 /* HomeTabs */,
+				E8144F9F21CE7ECA0004F986 /* MoatamarDetailsViewController */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -247,6 +333,7 @@
 				E85374FC21C5B1A2001EE570 /* Sources */,
 				E85374FD21C5B1A2001EE570 /* Frameworks */,
 				E85374FE21C5B1A2001EE570 /* Resources */,
+				F7F4203F079C464B2588580B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -298,11 +385,8 @@
 				E853750E21C5B1A4001EE570 /* LaunchScreen.storyboard in Resources */,
 				E853753D21C5B8E4001EE570 /* Cairo-SemiBold.ttf in Resources */,
 				E853753821C5B8E4001EE570 /* Cairo-Black.ttf in Resources */,
-				E853752F21C5B39F001EE570 /* GESSTwoMedium.otf in Resources */,
 				E853750B21C5B1A4001EE570 /* Assets.xcassets in Resources */,
 				E853753C21C5B8E4001EE570 /* Cairo-Regular.ttf in Resources */,
-				E853752E21C5B39F001EE570 /* GESSTwoLight.otf in Resources */,
-				E853752D21C5B39F001EE570 /* GESSTwoBold.otf in Resources */,
 				E853753921C5B8E4001EE570 /* Cairo-Bold.ttf in Resources */,
 				E853753B21C5B8E4001EE570 /* Cairo-Light.ttf in Resources */,
 				E853753A21C5B8E4001EE570 /* Cairo-ExtraLight.ttf in Resources */,
@@ -330,6 +414,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F7F4203F079C464B2588580B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-El-Mutamer/Pods-El-Mutamer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-El-Mutamer/Pods-El-Mutamer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -342,22 +450,31 @@
 				E853750621C5B1A2001EE570 /* LoginViewController.swift in Sources */,
 				E8144F8B21CE42590004F986 /* MaaredViewController.swift in Sources */,
 				E853752721C5B35D001EE570 /* extension+UITextField+UILabel.swift in Sources */,
+				E833DB5E21D65538000EB8AD /* Constants.swift in Sources */,
 				E8DA6ABB21C89E1D009B9EC9 /* SideMenuTableViewController.swift in Sources */,
+				E8144FAB21CED1480004F986 /* GalaryCollectionViewController.swift in Sources */,
 				E853755321C5C9DD001EE570 /* SliderCell.swift in Sources */,
 				E853752121C5B35D001EE570 /* CustomCell.swift in Sources */,
+				E8144FA921CE81B80004F986 /* MapViewController.swift in Sources */,
+				E8144FAE21CED3D60004F986 /* InfoViewController.swift in Sources */,
 				E853754521C5C335001EE570 /* HomeViewController.swift in Sources */,
+				E833DB7121D656A4000EB8AD /* ConferencesModel.swift in Sources */,
 				E8144F9321CE54270004F986 /* MoatamratSubViewController.swift in Sources */,
 				E8144F8421CD5A130004F986 /* TrendsCollectionViewCell.swift in Sources */,
 				E8144F9A21CE5A270004F986 /* MaaredSelectViewController.swift in Sources */,
 				E8144F8921CD607F0004F986 /* MoatamratViewController.swift in Sources */,
 				E853752621C5B35D001EE570 /* extension+UIColor+UIFonts.swift in Sources */,
 				E853752321C5B35D001EE570 /* extension+Gradient.swift in Sources */,
+				E8144FAD21CED2E30004F986 /* SponsersCollectionViewController.swift in Sources */,
 				E853752221C5B35D001EE570 /* extension+CALayer+ApplyShadow.swift in Sources */,
 				E853750421C5B1A2001EE570 /* AppDelegate.swift in Sources */,
 				E8144F9C21CE5AAD0004F986 /* profileViewController.swift in Sources */,
 				E853753F21C5BE67001EE570 /* RegisterViewController.swift in Sources */,
 				E853752521C5B35D001EE570 /* extension+String.swift in Sources */,
+				E833DB6E21D65645000EB8AD /* CodableMethod.swift in Sources */,
+				E8144FA821CE81B60004F986 /* TableViewController.swift in Sources */,
 				E853752421C5B35D001EE570 /* extension+NSLayoutConstraint.swift in Sources */,
+				E8144FA721CE7FC20004F986 /* ShopViewController.swift in Sources */,
 				E853755121C5C9DD001EE570 /* latesNewsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +616,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "El-Mutamer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -517,6 +635,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "El-Mutamer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

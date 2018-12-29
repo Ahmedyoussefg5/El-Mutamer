@@ -12,7 +12,7 @@ class SliderCell : UICollectionViewCell {
     
     let cellImageView: UIImageView = {
         let imgV = UIImageView()
-        //imgV.image = #imageLiteral(resourceName: "slider6")
+        imgV.image = UIImage(named: "Layer 7")
         imgV.contentMode = .scaleToFill
         return imgV
     }()
@@ -21,7 +21,7 @@ class SliderCell : UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupCell()
-        contentView.backgroundColor = .blue
+        //contentView.backgroundColor = .blue
     }
     
     

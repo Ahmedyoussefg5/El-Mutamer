@@ -10,8 +10,8 @@ target 'El-Mutamer' do
   # Pods for El-Mutamer
   pod 'SideMenu'
   pod 'Alamofire'
-  pod 'SwiftyJSON'
+ # pod 'SwiftyJSON'
   pod 'Kingfisher'
-  pod 'DropDown'
+  #pod 'DropDown'
   pod 'IQKeyboardManagerSwift'
 end

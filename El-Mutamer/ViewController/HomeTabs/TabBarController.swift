@@ -18,40 +18,26 @@ class HomeTabBarController: UITabBarController {
         
         let homeViewController = UINavigationController(rootViewController: HomeViewController())
         let moatamratViewController = UINavigationController(rootViewController: MoatamratSelectViewController())
-        let maaredViewController = UINavigationController(rootViewController: MaaredSelectViewController())
+        //let maaredViewController = UINavigationController(rootViewController: MaaredSelectViewController())
         let profileViewController = UINavigationController(rootViewController: ProfileViewController())
 
         homeViewController.tabBarItem = UITabBarItem(title: "الرئسية", image: #imageLiteral(resourceName: "home"), selectedImage: #imageLiteral(resourceName: "home"))
         moatamratViewController.tabBarItem = UITabBarItem(title: "المؤتمرات", image: #imageLiteral(resourceName: "moatamer"), selectedImage: #imageLiteral(resourceName: "moatamer"))
-        maaredViewController.tabBarItem = UITabBarItem(title: "معارض", image: #imageLiteral(resourceName: "ma3rad"), selectedImage: #imageLiteral(resourceName: "ma3rad"))
+       // maaredViewController.tabBarItem = UITabBarItem(title: "معارض", image: #imageLiteral(resourceName: "ma3rad"), selectedImage: #imageLiteral(resourceName: "ma3rad"))
         profileViewController.tabBarItem = UITabBarItem(title: "حسابي", image: #imageLiteral(resourceName: "mail"), selectedImage: #imageLiteral(resourceName: "mail"))
 
 
         //tabBarController?.selectedViewController = homeViewController
         
-        let tabBarList = [profileViewController, maaredViewController, moatamratViewController, homeViewController]
+        let tabBarList = [profileViewController, moatamratViewController, homeViewController]
         viewControllers = tabBarList
         
-        selectedViewController = tabBarList[1]
+        selectedViewController = tabBarList[2]
         
-       // setupSideMenu()
         
 
     }
 
-//    fileprivate func setupSideMenu() {
-//        let menuRightNavigationController = UISideMenuNavigationController(rootViewController: SideMenuTableViewController())
-//
-//        //menuRightNavigationController.delegate = self as? UINavigationControllerDelegate
-//
-//        SideMenuManager.default.menuRightNavigationController = menuRightNavigationController
-//        //  SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
-//        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.view)
-//        //  SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
-//        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.view)
-//        // (Optional) Prevent status bar area from turning black when menu appears:
-//        SideMenuManager.default.menuFadeStatusBar = false
-//    }
     
 
 }
