@@ -54,3 +54,17 @@ struct Schedule: Codable {
 enum YoutubeID: String, Codable {
     case the0ANNYEUARAk = "0aNNYEUARAk"
 }
+
+
+// To parse the JSON, add this file to your project and do:
+//
+//   let categury = try? newJSONDecoder().decode(Categury.self, from: jsonData)
+
+import Foundation
+
+struct SingleConferance: Codable {
+    let success: Bool
+    let message: String
+    let data: Datum
+}
+

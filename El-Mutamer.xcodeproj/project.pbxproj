@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E809363621D9DC0F002329DC /* CateguryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E809363521D9DC0F002329DC /* CateguryModel.swift */; };
 		E8144F8421CD5A130004F986 /* TrendsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144F8321CD5A120004F986 /* TrendsCollectionViewCell.swift */; };
 		E8144F8921CD607F0004F986 /* MoatamratViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144F8821CD607F0004F986 /* MoatamratViewController.swift */; };
-		E8144F8B21CE42590004F986 /* MaaredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144F8A21CE42590004F986 /* MaaredViewController.swift */; };
 		E8144F9321CE54270004F986 /* MoatamratSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144F9221CE54270004F986 /* MoatamratSubViewController.swift */; };
 		E8144F9A21CE5A270004F986 /* MaaredSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144F9921CE5A270004F986 /* MaaredSelectViewController.swift */; };
 		E8144F9C21CE5AAD0004F986 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144F9B21CE5AAD0004F986 /* profileViewController.swift */; };
@@ -52,6 +52,7 @@
 /* Begin PBXFileReference section */
 		36B5EC915741306C030ED01A /* Pods_El_Mutamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_El_Mutamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ADEE91A2DFDB4BF3F9780B0 /* Pods-El-Mutamer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El-Mutamer.release.xcconfig"; path = "Pods/Target Support Files/Pods-El-Mutamer/Pods-El-Mutamer.release.xcconfig"; sourceTree = "<group>"; };
+		E809363521D9DC0F002329DC /* CateguryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CateguryModel.swift; sourceTree = "<group>"; };
 		E8144F8321CD5A120004F986 /* TrendsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsCollectionViewCell.swift; sourceTree = "<group>"; };
 		E8144F8821CD607F0004F986 /* MoatamratViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoatamratViewController.swift; sourceTree = "<group>"; };
 		E8144F8A21CE42590004F986 /* MaaredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaaredViewController.swift; sourceTree = "<group>"; };
@@ -222,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				E833DB7021D656A4000EB8AD /* ConferencesModel.swift */,
+				E809363521D9DC0F002329DC /* CateguryModel.swift */,
 			);
 			path = Modles;
 			sourceTree = "<group>";
@@ -248,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				E853750321C5B1A2001EE570 /* AppDelegate.swift */,
+				E833DB5D21D65538000EB8AD /* Constants.swift */,
 				E833DB6221D65636000EB8AD /* ApiService */,
 				E853753021C5B46F001EE570 /* ViewController */,
 				E853754D21C5C9D7001EE570 /* View */,
@@ -256,7 +259,6 @@
 				E853750A21C5B1A4001EE570 /* Assets.xcassets */,
 				E853750C21C5B1A4001EE570 /* LaunchScreen.storyboard */,
 				E853750F21C5B1A4001EE570 /* Info.plist */,
-				E833DB5D21D65538000EB8AD /* Constants.swift */,
 			);
 			path = "El-Mutamer";
 			sourceTree = "<group>";
@@ -448,7 +450,6 @@
 				E853752821C5B35D001EE570 /* extension+UIViewController.swift in Sources */,
 				E853754421C5C335001EE570 /* TabBarController.swift in Sources */,
 				E853750621C5B1A2001EE570 /* LoginViewController.swift in Sources */,
-				E8144F8B21CE42590004F986 /* MaaredViewController.swift in Sources */,
 				E853752721C5B35D001EE570 /* extension+UITextField+UILabel.swift in Sources */,
 				E833DB5E21D65538000EB8AD /* Constants.swift in Sources */,
 				E8DA6ABB21C89E1D009B9EC9 /* SideMenuTableViewController.swift in Sources */,
@@ -458,6 +459,7 @@
 				E8144FA921CE81B80004F986 /* MapViewController.swift in Sources */,
 				E8144FAE21CED3D60004F986 /* InfoViewController.swift in Sources */,
 				E853754521C5C335001EE570 /* HomeViewController.swift in Sources */,
+				E809363621D9DC0F002329DC /* CateguryModel.swift in Sources */,
 				E833DB7121D656A4000EB8AD /* ConferencesModel.swift in Sources */,
 				E8144F9321CE54270004F986 /* MoatamratSubViewController.swift in Sources */,
 				E8144F8421CD5A130004F986 /* TrendsCollectionViewCell.swift in Sources */,

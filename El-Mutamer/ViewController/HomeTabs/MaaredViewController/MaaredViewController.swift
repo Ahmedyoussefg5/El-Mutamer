@@ -31,10 +31,16 @@ class MaaredViewController: UIViewController {
         view.backgroundColor = #colorLiteral(red: 0.9998950362, green: 1, blue: 0.9998714328, alpha: 1)
         setupView()
        // setupNavBar(title: "معارض")
-
     }
     
-
+    init(id: Int) {
+        super.init(nibName: nil, bundle: nil)
+        getData(id: id)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     @objc func handleMenuTapped() {
         // present(SideMenuManager.default.menuRightNavigationController!, animated: true, completion: nil)
@@ -49,9 +55,24 @@ class MaaredViewController: UIViewController {
     fileprivate func setupView() {
         view.addSubview(latesNewsCollectionView)
         latesNewsCollectionView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor)
-        
     }
 
+    var catData: Datum? {
+        didSet {
+            latesNewsCollectionView.reloadData()
+        }
+    }
+    private func getData(id: Int) {
+        var url = getByID
+        url.append("\(id)")
+        GetDataFromApi.shared.getDataAPI(SingleConferance.self, url: url) { (message, data) in
+            if message == nil {
+                if let data = data {
+                    self.catData = data.data
+                }
+            }
+        }
+    }
 }
 
 extension MaaredViewController : UICollectionViewDelegate, UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
