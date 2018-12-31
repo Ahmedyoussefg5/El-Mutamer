@@ -16,3 +16,17 @@ let maaredUrl = baseURl + "categories?type=2"
 //let getByID = baseURl + "getConference?id="
 let gatAllMaared = "http://beta.conferencenews.news/api/getCategoryConferences?category_id="
 let gatAllMoatamrat = "http://beta.conferencenews.news/api/getCategoryConferences?category_id="
+
+
+//def
+let ApiTokenKey = "apiToken"
+let LoggedInKey = "loggedIn"
+let UserMailKey = "userEmail"
+let UserPhoneKey = "UserPhoneKey"
+let UserAddressKey = "UserAddressKey"
+let UserIdKey = "userId"
+let UserProfileImage = "userProfileImage"
+let UserName = "userName"
+let UserCountry = "userCountry"
+let UserCountryName = "userCountryName"
+let UserProvider = "userProvider"

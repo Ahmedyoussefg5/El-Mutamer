@@ -6,9 +6,9 @@ class GetDataFromApi {
     static var shared = GetDataFromApi()
     private init() {}
     
-    func getDataAPI<T: Codable>(_ decoder: T.Type, url: String, complation: @escaping (_ error: String?, _ data: T?) -> Void) {
+    func getDataAPI<T: Codable>(_ decoder: T.Type, url: String, _ method: HTTPMethod = .get,_ parameters:[String: Any]? = nil, complation: @escaping (_ error: String?, _ data: T?) -> Void) {
         
-        Alamofire.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil).responseJSON {
+        Alamofire.request(url, method: method, parameters: parameters, encoding: URLEncoding.default, headers: nil).responseJSON {
             (response) in
             switch response.result {
             case .failure(let error) :

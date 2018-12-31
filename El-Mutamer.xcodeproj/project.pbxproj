@@ -19,6 +19,8 @@
 		E8144FAB21CED1480004F986 /* GalaryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144FAA21CED1480004F986 /* GalaryCollectionViewController.swift */; };
 		E8144FAD21CED2E30004F986 /* SponsersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144FAC21CED2E20004F986 /* SponsersCollectionViewController.swift */; };
 		E8144FAE21CED3D60004F986 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8144FA221CE7F060004F986 /* InfoViewController.swift */; };
+		E81F302121DAB6A400B60668 /* Reg User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81F302021DAB6A300B60668 /* Reg User.swift */; };
+		E81F302A21DABF9700B60668 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E833DB6821D65636000EB8AD /* AuthService.swift */; };
 		E833DB5E21D65538000EB8AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E833DB5D21D65538000EB8AD /* Constants.swift */; };
 		E833DB6E21D65645000EB8AD /* CodableMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E833DB6B21D65636000EB8AD /* CodableMethod.swift */; };
 		E833DB7121D656A4000EB8AD /* ConferencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E833DB7021D656A4000EB8AD /* ConferencesModel.swift */; };
@@ -65,11 +67,8 @@
 		E8144FA521CE7F060004F986 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		E8144FAA21CED1480004F986 /* GalaryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaryCollectionViewController.swift; sourceTree = "<group>"; };
 		E8144FAC21CED2E20004F986 /* SponsersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsersCollectionViewController.swift; sourceTree = "<group>"; };
+		E81F302021DAB6A300B60668 /* Reg User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reg User.swift"; sourceTree = "<group>"; };
 		E833DB5D21D65538000EB8AD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		E833DB6421D65636000EB8AD /* AuthService+Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthService+Login.swift"; sourceTree = "<group>"; };
-		E833DB6521D65636000EB8AD /* AuthService+LoginSocial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthService+LoginSocial.swift"; sourceTree = "<group>"; };
-		E833DB6621D65636000EB8AD /* AuthService+Registertion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthService+Registertion.swift"; sourceTree = "<group>"; };
-		E833DB6721D65636000EB8AD /* AuthService+UpdateUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthService+UpdateUserData.swift"; sourceTree = "<group>"; };
 		E833DB6821D65636000EB8AD /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		E833DB6B21D65636000EB8AD /* CodableMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableMethod.swift; sourceTree = "<group>"; };
 		E833DB6C21D65636000EB8AD /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
@@ -194,10 +193,6 @@
 		E833DB6321D65636000EB8AD /* AuthService */ = {
 			isa = PBXGroup;
 			children = (
-				E833DB6421D65636000EB8AD /* AuthService+Login.swift */,
-				E833DB6521D65636000EB8AD /* AuthService+LoginSocial.swift */,
-				E833DB6621D65636000EB8AD /* AuthService+Registertion.swift */,
-				E833DB6721D65636000EB8AD /* AuthService+UpdateUserData.swift */,
 				E833DB6821D65636000EB8AD /* AuthService.swift */,
 			);
 			path = AuthService;
@@ -223,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				E833DB7021D656A4000EB8AD /* ConferencesModel.swift */,
+				E81F302021DAB6A300B60668 /* Reg User.swift */,
 				E809363521D9DC0F002329DC /* CateguryModel.swift */,
 			);
 			path = Modles;
@@ -460,6 +456,7 @@
 				E8144FAE21CED3D60004F986 /* InfoViewController.swift in Sources */,
 				E853754521C5C335001EE570 /* HomeViewController.swift in Sources */,
 				E809363621D9DC0F002329DC /* CateguryModel.swift in Sources */,
+				E81F302121DAB6A400B60668 /* Reg User.swift in Sources */,
 				E833DB7121D656A4000EB8AD /* ConferencesModel.swift in Sources */,
 				E8144F9321CE54270004F986 /* MoatamratSubViewController.swift in Sources */,
 				E8144F8421CD5A130004F986 /* TrendsCollectionViewCell.swift in Sources */,
@@ -473,6 +470,7 @@
 				E8144F9C21CE5AAD0004F986 /* profileViewController.swift in Sources */,
 				E853753F21C5BE67001EE570 /* RegisterViewController.swift in Sources */,
 				E853752521C5B35D001EE570 /* extension+String.swift in Sources */,
+				E81F302A21DABF9700B60668 /* AuthService.swift in Sources */,
 				E833DB6E21D65645000EB8AD /* CodableMethod.swift in Sources */,
 				E8144FA821CE81B60004F986 /* TableViewController.swift in Sources */,
 				E853752421C5B35D001EE570 /* extension+NSLayoutConstraint.swift in Sources */,

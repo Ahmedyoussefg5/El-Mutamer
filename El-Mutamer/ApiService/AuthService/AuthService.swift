@@ -38,6 +38,24 @@ class AuthService {
         }
     }
     
+    var userPhone: String? {
+        get {
+            return defaults.value(forKey: UserPhoneKey) as? String
+        }
+        set {
+            defaults.set(newValue, forKey: UserPhoneKey)
+        }
+    }
+    
+    var userAdress: String? {
+        get {
+            return defaults.value(forKey: UserAddressKey) as? String
+        }
+        set {
+            defaults.set(newValue, forKey: UserAddressKey)
+        }
+    }
+    
     var userId: Int? {
         get {
             if let userID = defaults.value(forKey: UserIdKey) as? Int {
@@ -67,40 +85,6 @@ class AuthService {
         }
     }
     
-    // userCountry
-    var userCountryUrl: String? {
-        get {
-            return defaults.value(forKey: UserCountry) as? String
-        }
-        set {
-            defaults.set(newValue, forKey: UserCountry)
-        }
-    }
-    var userCountryName: String? {
-        get {
-            return defaults.value(forKey: UserCountryName) as? String
-        }
-        set {
-            defaults.set(newValue, forKey: UserCountryName)
-        }
-    }
-    var userCountryId: Int? {
-        get {
-            return defaults.value(forKey: UserCountryName) as? Int
-        }
-        set {
-            defaults.set(newValue, forKey: UserCountryName)
-        }
-    }
-    
-    var userProvider: String? {
-        get {
-            return defaults.value(forKey: UserProvider) as? String
-        }
-        set {
-            defaults.set(newValue, forKey: UserProvider)
-        }
-    }
     
     func removeUserDefaults()  {
         isLoggedIn = false
@@ -109,8 +93,7 @@ class AuthService {
         userId = nil
         userName = nil
         userImage = nil
-        userCountryUrl = nil
-        userProvider = nil
+
     }
     
     func restartAppAndRemoveUserDefaults() {
@@ -121,26 +104,10 @@ class AuthService {
             guard let window =  UIApplication.shared.keyWindow else { fatalError() }
 //            let loginVC = UIStoryboard(name: "LoginStoryboard", bundle: nil).instantiateInitialViewController()
             //self.present(navigationController, animated: true, completion: nil)
-            let welcomeVC = WelcomeViewController()
-            showSwipingViewController = false
-            window.rootViewController = welcomeVC
-            UIView.transition(with: window, duration: 1.0, options: .transitionFlipFromTop, animations: nil, completion: nil)
+//            let welcomeVC = WelcomeViewController()
+//            window.rootViewController = welcomeVC
+//            UIView.transition(with: window, duration: 1.0, options: .transitionFlipFromTop, animations: nil, completion: nil)
         }
-        
 
-        // make alert for the user
     }
-    
-//    func resetDefaults() {
-    //print(Array(UserDefaults.standard.dictionaryRepresentation().values))
-    // defaults.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
-    // defaults.synchronize()
-    //print("****************************************************")
-    //print(Array(UserDefaults.standard.dictionaryRepresentation().values))
-    
-    //        let dictionary = defaults.dictionaryRepresentation()
-    //        dictionary.keys.forEach { key in
-    //            defaults.removeObject(forKey: key)
-    //        }
-//    }
 }

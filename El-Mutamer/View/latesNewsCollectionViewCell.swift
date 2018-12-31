@@ -27,7 +27,7 @@ class LatesNewsCollectionView : UICollectionViewCell {
     
     let cellSubName: UILabel = {
         let lbl = UILabel()
-        lbl.font = UIFont.CairoBold(of: 14)
+        lbl.font = UIFont.CairoBold(of: 10)
         lbl.numberOfLines = 1
         lbl.textAlignment = .center
         //lbl.text = "شسيشسيشسيشسيشسيشسيشسيشسيشسيشسي"
