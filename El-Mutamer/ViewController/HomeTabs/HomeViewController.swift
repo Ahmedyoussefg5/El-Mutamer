@@ -80,7 +80,7 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setupNavBar(title: "الرئيسبة")
+        setupNavBar(title: "الرئيسية")
 
     }
     
@@ -100,9 +100,9 @@ class HomeViewController: UIViewController {
     }
     
     @objc func handleSearchTapped() {
-        // let searchViewController = SearchViewController()
-        // searchViewController.modalPresentationStyle = .custom
-        // present(searchViewController, animated: true, completion: nil)
+         let searchViewController = SearchViewController()
+         searchViewController.modalPresentationStyle = .custom
+         present(searchViewController, animated: true, completion: nil)
     }
     
     fileprivate func setupView() {

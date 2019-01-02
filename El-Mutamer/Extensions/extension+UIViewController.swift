@@ -109,7 +109,7 @@ extension UIViewController {
         let menuButton = UIBarButtonItem(image: #imageLiteral(resourceName: "slide menue"), landscapeImagePhone: #imageLiteral(resourceName: "slide menue"), style: .plain, target: self, action: #selector(handleMenu))
        navigationItem.rightBarButtonItem = menuButton
         let searchImage = UIImage(named: "searchsearch")
-        let searchButton = UIBarButtonItem(image: searchImage, landscapeImagePhone: searchImage, style: .plain, target: self, action: #selector(handleMenu))
+        let searchButton = UIBarButtonItem(image: searchImage, landscapeImagePhone: searchImage, style: .plain, target: self, action: #selector(handleSearch))
         navigationItem.leftBarButtonItem = searchButton
         
         setupSideMenu()
@@ -119,7 +119,9 @@ extension UIViewController {
         present(SideMenuManager.default.menuRightNavigationController!, animated: true, completion: nil)
     }
     @objc private func handleSearch() {
-        
+        let searchViewController = SearchViewController()
+        searchViewController.modalPresentationStyle = .custom
+        present(searchViewController, animated: true, completion: nil)
     }
     
     fileprivate func setupSideMenu() {

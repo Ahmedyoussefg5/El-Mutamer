@@ -39,9 +39,9 @@ class MoatamratSelectViewController: UIViewController {
     }
     
     @objc func handleSearchTapped() {
-        // let searchViewController = SearchViewController()
-        // searchViewController.modalPresentationStyle = .custom
-        // present(searchViewController, animated: true, completion: nil)
+        let searchViewController = SearchViewController()
+        searchViewController.modalPresentationStyle = .custom
+        present(searchViewController, animated: true, completion: nil)
     }
     
     fileprivate func setupView() {

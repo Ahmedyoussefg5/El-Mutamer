@@ -102,11 +102,10 @@ class AuthService {
         
         DispatchQueue.main.async {
             guard let window =  UIApplication.shared.keyWindow else { fatalError() }
-//            let loginVC = UIStoryboard(name: "LoginStoryboard", bundle: nil).instantiateInitialViewController()
-            //self.present(navigationController, animated: true, completion: nil)
-//            let welcomeVC = WelcomeViewController()
-//            window.rootViewController = welcomeVC
-//            UIView.transition(with: window, duration: 1.0, options: .transitionFlipFromTop, animations: nil, completion: nil)
+            
+            let loginViewController = LoginViewController()
+            window.rootViewController = loginViewController
+            UIView.transition(with: window, duration: 1.0, options: .transitionFlipFromTop, animations: nil, completion: nil)
         }
 
     }

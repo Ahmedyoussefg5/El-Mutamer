@@ -20,8 +20,15 @@ import UIKit
         window = UIWindow()
         window?.makeKeyAndVisible()
         
-        let loginViewController = LoginViewController()
-        window?.rootViewController = loginViewController
+        if AuthService.instance.authToken == nil {
+            let loginViewController = LoginViewController()
+            window?.rootViewController = loginViewController
+
+        } else {
+            let loginViewController = HomeTabBarController()
+            window?.rootViewController = loginViewController
+        }
+       
         return true
     }
 

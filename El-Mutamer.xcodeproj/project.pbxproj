@@ -48,6 +48,8 @@
 		E853755121C5C9DD001EE570 /* latesNewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853754E21C5C9D7001EE570 /* latesNewsCollectionViewCell.swift */; };
 		E853755321C5C9DD001EE570 /* SliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853755021C5C9D7001EE570 /* SliderCell.swift */; };
 		E8DA6ABB21C89E1D009B9EC9 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA6ABA21C89E1C009B9EC9 /* SideMenuTableViewController.swift */; };
+		E8F4F67621DD08C1004780C5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F4F67521DD08C1004780C5 /* SearchViewController.swift */; };
+		E8F4F67821DD1022004780C5 /* CallUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F4F67721DD1022004780C5 /* CallUsViewController.swift */; };
 		FD7F9891AB07EA0323E723D4 /* Pods_El_Mutamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B5EC915741306C030ED01A /* Pods_El_Mutamer.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +101,8 @@
 		E853754E21C5C9D7001EE570 /* latesNewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = latesNewsCollectionViewCell.swift; sourceTree = "<group>"; };
 		E853755021C5C9D7001EE570 /* SliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCell.swift; sourceTree = "<group>"; };
 		E8DA6ABA21C89E1C009B9EC9 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
+		E8F4F67521DD08C1004780C5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E8F4F67721DD1022004780C5 /* CallUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallUsViewController.swift; sourceTree = "<group>"; };
 		F840E1CF150704B96565E0EC /* Pods-El-Mutamer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El-Mutamer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-El-Mutamer/Pods-El-Mutamer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -278,6 +282,8 @@
 			isa = PBXGroup;
 			children = (
 				E8DA6ABA21C89E1C009B9EC9 /* SideMenuTableViewController.swift */,
+				E8F4F67521DD08C1004780C5 /* SearchViewController.swift */,
+				E8F4F67721DD1022004780C5 /* CallUsViewController.swift */,
 				E8144F9E21CE70490004F986 /* AuthViewControllers */,
 				E853754621C5C345001EE570 /* HomeTabs */,
 				E8144F9F21CE7ECA0004F986 /* MoatamarDetailsViewController */,
@@ -447,6 +453,7 @@
 				E853754421C5C335001EE570 /* TabBarController.swift in Sources */,
 				E853750621C5B1A2001EE570 /* LoginViewController.swift in Sources */,
 				E853752721C5B35D001EE570 /* extension+UITextField+UILabel.swift in Sources */,
+				E8F4F67821DD1022004780C5 /* CallUsViewController.swift in Sources */,
 				E833DB5E21D65538000EB8AD /* Constants.swift in Sources */,
 				E8DA6ABB21C89E1D009B9EC9 /* SideMenuTableViewController.swift in Sources */,
 				E8144FAB21CED1480004F986 /* GalaryCollectionViewController.swift in Sources */,
@@ -463,6 +470,7 @@
 				E8144F9A21CE5A270004F986 /* MaaredSelectViewController.swift in Sources */,
 				E8144F8921CD607F0004F986 /* MoatamratViewController.swift in Sources */,
 				E853752621C5B35D001EE570 /* extension+UIColor+UIFonts.swift in Sources */,
+				E8F4F67621DD08C1004780C5 /* SearchViewController.swift in Sources */,
 				E853752321C5B35D001EE570 /* extension+Gradient.swift in Sources */,
 				E8144FAD21CED2E30004F986 /* SponsersCollectionViewController.swift in Sources */,
 				E853752221C5B35D001EE570 /* extension+CALayer+ApplyShadow.swift in Sources */,

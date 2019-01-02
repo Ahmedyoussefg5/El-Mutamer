@@ -16,7 +16,60 @@ class ProfileViewController: UIViewController {
         //scroll.showsVerticalScrollIndicator = false
         return scroll
     }()
-    
+    let profileImageView: UIImageView = {
+        let imgV = UIImageView()
+        imgV.contentMode = .scaleToFill
+        imgV.image = UIImage(named: "Forma 1")
+        imgV.layer.cornerRadius = 50
+        //  imgV.layer.masksToBounds = true
+        imgV.layer.applySketchShadow(color: .black19, alpha: 1, x: 0, y: 8, blur: 10, spread: 0)
+        return imgV
+    }()
+    let mailLable: UILabel = {
+        let lable = UILabel()
+        lable.textColor = .black
+        lable.font = UIFont.CairoSemiBold(of: 12)
+        let title = "asdasd@sdas.cosad"
+        lable.textAlignment = .left
+        lable.text = title
+        return lable
+    }()
+    let phoneLable: UILabel = {
+        let lable = UILabel()
+        lable.textColor = .black
+        lable.font = UIFont.CairoSemiBold(of: 12)
+        let title = "43523423423"
+        lable.textAlignment = .left
+        lable.text = title
+        return lable
+    }()
+    let locationLable: UILabel = {
+        let lable = UILabel()
+        lable.textColor = .black
+        lable.font = UIFont.CairoSemiBold(of: 12)
+        let title = "tanta, dfasdsa"
+        lable.textAlignment = .left
+        lable.text = title
+        return lable
+    }()
+    let nameLable: UILabel = {
+        let lable = UILabel()
+        lable.textColor = .black
+        lable.font = UIFont.CairoSemiBold(of: 12)
+        let title = "ta sad asdas dfasdsa"
+        lable.textAlignment = .center
+        lable.text = title
+        return lable
+    }()
+    let jobLable: UILabel = {
+        let lable = UILabel()
+        lable.textColor = #colorLiteral(red: 0.3803488016, green: 0.3804177642, blue: 0.3803390563, alpha: 1)
+        lable.font = UIFont.CairoSemiBold(of: 10)
+        let title = "tanta, dfasdsa"
+        lable.textAlignment = .center
+        lable.text = title
+        return lable
+    }()
     lazy var trendsCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -41,6 +94,12 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.9998950362, green: 1, blue: 0.9998714328, alpha: 1)
 
+        mailLable.text = AuthService.instance.userEmail
+        phoneLable.text = AuthService.instance.userPhone
+        nameLable.text = AuthService.instance.userName
+        
+        guard let url = URL(string: AuthService.instance.userImage ?? "") else { return }
+        profileImageView.kf.setImage(with: url)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -74,42 +133,7 @@ class ProfileViewController: UIViewController {
             return imgV
         }()
         
-        let profileImageView: UIImageView = {
-            let imgV = UIImageView()
-            imgV.contentMode = .scaleToFill
-            imgV.image = UIImage(named: "Forma 1")
-            imgV.layer.cornerRadius = 50
-          //  imgV.layer.masksToBounds = true
-            imgV.layer.applySketchShadow(color: .black19, alpha: 1, x: 0, y: 8, blur: 10, spread: 0)
-            return imgV
-        }()
-        let mailLable: UILabel = {
-            let lable = UILabel()
-            lable.textColor = .black
-            lable.font = UIFont.CairoSemiBold(of: 12)
-            let title = "asdasd@sdas.cosad"
-            lable.textAlignment = .left
-            lable.text = title
-            return lable
-        }()
-        let phoneLable: UILabel = {
-            let lable = UILabel()
-            lable.textColor = .black
-            lable.font = UIFont.CairoSemiBold(of: 12)
-            let title = "43523423423"
-            lable.textAlignment = .left
-            lable.text = title
-            return lable
-        }()
-        let locationLable: UILabel = {
-            let lable = UILabel()
-            lable.textColor = .black
-            lable.font = UIFont.CairoSemiBold(of: 12)
-            let title = "tanta, dfasdsa"
-            lable.textAlignment = .left
-            lable.text = title
-            return lable
-        }()
+        
         
         let contView1: UIView = {
             let view = UIView()
@@ -130,24 +154,7 @@ class ProfileViewController: UIViewController {
             return view
         }()
         
-        let nameLable: UILabel = {
-            let lable = UILabel()
-            lable.textColor = .black
-            lable.font = UIFont.CairoSemiBold(of: 12)
-            let title = "ta sad asdas dfasdsa"
-            lable.textAlignment = .center
-            lable.text = title
-            return lable
-        }()
-        let jobLable: UILabel = {
-            let lable = UILabel()
-            lable.textColor = #colorLiteral(red: 0.3803488016, green: 0.3804177642, blue: 0.3803390563, alpha: 1)
-            lable.font = UIFont.CairoSemiBold(of: 10)
-            let title = "tanta, dfasdsa"
-            lable.textAlignment = .center
-            lable.text = title
-            return lable
-        }()
+
 
         
         view.addSubview(scrollView)
@@ -220,7 +227,7 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return 30
+            return 0
     }
     
     func profileViewController(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

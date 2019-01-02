@@ -32,7 +32,7 @@ class HomeTabBarController: UITabBarController {
         let tabBarList = [profileViewController, maaredViewController, moatamratViewController, homeViewController]
         viewControllers = tabBarList
         
-        selectedViewController = tabBarList[2]
+        selectedViewController = tabBarList[3]
         
         
 

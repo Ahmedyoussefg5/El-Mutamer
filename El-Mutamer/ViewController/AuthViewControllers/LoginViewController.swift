@@ -94,9 +94,36 @@ class LoginViewController: UIViewController {
         let registerViewController = RegisterViewController()
         present(registerViewController, animated: true, completion: nil)
     }
+    
     @objc private func loginUser() {
-       let homeVC = HomeTabBarController()
-        present(homeVC, animated: true, completion: nil)
+        guard let mail = mailTxt.text else { return }
+        guard let pass = passTxt.text else { return }
+        let url = "http://beta.conferencenews.news/api/login?email=\(mail)&password=\(pass)"
+        print(url)
+        GetDataFromApi.shared.getDataAPI(RegUser.self, url: url, .post, nil) { (message, data) in
+            if message == nil {
+                print(data)
+                guard let data = data else { return }
+                if data.success {
+                    guard let userData = data.data else { return }
+                    AuthService.instance.authToken = userData.token
+                    AuthService.instance.userEmail = userData.userdata.email
+                    AuthService.instance.userImage = userData.userdata.img
+                    AuthService.instance.userPhone = userData.userdata.phone
+                    AuthService.instance.userName = userData.userdata.name
+                    
+                    let homeVC = HomeTabBarController()
+                    self.present(homeVC, animated: true, completion: nil)
+                } else {
+                    self.showAlert(title: "User Not Found", messages: nil, message: nil, selfDismissing: false)
+                }
+            } else {
+                self.showAlert(title: message ?? "Error Happend", messages: nil, message: nil, selfDismissing: false)
+            }
+        }
+        
+        
+        
         
     }
 }

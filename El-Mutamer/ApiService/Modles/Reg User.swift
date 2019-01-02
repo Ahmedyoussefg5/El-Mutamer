@@ -3,7 +3,7 @@ import Foundation
 
 struct RegUser: Codable {
     let success: Bool
-    let message: String
+   // let message: String
     let data: UserData?
 }
 

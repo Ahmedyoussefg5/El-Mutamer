@@ -215,7 +215,7 @@ class RegisterViewController: UIViewController {
                     let homeVC = HomeTabBarController()
                     self.present(homeVC, animated: true, completion: nil)
                 } else {
-                    self.showAlert(title: data.message, messages: nil, message: nil, selfDismissing: false)
+                    self.showAlert(title: "Error Happend", messages: nil, message: nil, selfDismissing: false)
                 }
             } else {
                 self.showAlert(title: message ?? "Error Happend", messages: nil, message: nil, selfDismissing: false)

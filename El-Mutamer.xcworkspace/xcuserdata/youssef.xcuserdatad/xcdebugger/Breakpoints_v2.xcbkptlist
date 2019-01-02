@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "El-Mutamer/ViewController/HomeTabs/HomeViewController.swift"
-            timestampString = "567984727.825905"
+            timestampString = "568136029.779884"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "175"
@@ -25,12 +25,28 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "El-Mutamer/ViewController/AuthViewControllers/RegisterViewController.swift"
-            timestampString = "567984727.826008"
+            filePath = "El-Mutamer/ViewController/AuthViewControllers/LoginViewController.swift"
+            timestampString = "568136029.779982"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "178"
-            endingLineNumber = "178"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "loginUser()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "El-Mutamer/ViewController/AuthViewControllers/RegisterViewController.swift"
+            timestampString = "568136029.780056"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
             landmarkName = "regUser()"
             landmarkType = "7">
          </BreakpointContent>
